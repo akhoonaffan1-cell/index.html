@@ -1,0 +1,64 @@
+<!-- Cleaned and functional HTML template for e-Challan receipt -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Challan Receipt</title>
+    <link rel="stylesheet" href="https://geologymining.jk.gov.in/library/bootstrap-4.6.1/css/bootstrap.min.css">
+    <style>
+        body { background-color: #dc8504; }
+        .wrapper { padding: 20px; }
+        .header-note { color: #fff; }
+        .receipt-box { background: #ff9800; padding: 20px; border: 1px solid #444; }
+        .animatecolor { animation: blink 1s infinite; }
+        @keyframes blink { 0% {color:#e91e63;} 100% {color:#3F51B5;} }
+        table td, table th { color: white !important; }
+        .tt { color: #ffeb3b; }
+    </style>
+</head>
+<body>
+<div class="container wrapper">
+    <p class="header-note"><strong style="text-decoration:underline;color:#111">Note:</strong> The information mentioned in e-Challan (Validity, Vehicle No.) should be matched with information mentioned in the https://geologymining.jk.gov.in/ which can be seen after scanning the QR code encrypted on e-challan.</p>
+    <p class="header-note"><strong style="text-decoration:underline;color:#111">सूचना:</strong> ई-चालान में उल्लिखित जानकारी, जैसे (वैधता और वाहन संख्या आदि) का मिलान https://geologymining.jk.gov.in/ में उल्लिखित जानकारी से किया जाना चाहिए, जिसे ई-चालान पर छपे क्यूआर कोड को स्कैन करने के बाद देखा जा सकता है।</p>
+    <hr>
+
+    <div class="receipt-box">
+        <div class="text-center">
+            <img src="https://geologymining.jk.gov.in/images/home/logo.png" alt="Logo">
+            <h3 class="animatecolor"><b>e-challan active</b></h3>
+            <h5><b>ई-चालान सक्रिय</b></h5>
+            <h6><b>URL:</b> <span class="tt">https://geologymining.jk.gov.in/</span></h6>
+            <h4><b>Challan No.: JK05B-18747119670</b></h4>
+        </div>
+
+        <table class="table table-bordered mt-3" style="background-color:#dc8504;">
+            <tr>
+                <th>Name & Location of Seller</th>
+                <td><b class="tt">Mohd Saleem Dar, Dar Mohalla, Drangbal Baramulla</b></td>
+            </tr>
+            <tr>
+                <th>Validity</th>
+                <td><b>Date:</b> <span class="tt">(15-11-2025 to 15-11-2025)</span> | <b>Time:</b> <span class="tt">(11:54 AM to 14:54 PM)</span></td>
+            </tr>
+            <tr>
+                <th>Route of Transportation</th>
+                <td>Source: <b>Drangbal</b> → Destination: <b>Pattan</b></td>
+            </tr>
+            <tr>
+                <th>Vehicle No.</th>
+                <td><b>JK01L8523</b></td>
+            </tr>
+            <tr>
+                <th>Name & Address of Consignee</th>
+                <td><b>Wahid, Pattan</b></td>
+            </tr>
+            <tr>
+                <th>Mineral</th>
+                <td><b>Rubble (7 MT)</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
